@@ -2,6 +2,16 @@
 
 These are angular SuperPowers course notes!
 
+
+
+
+## People
+
+### Ulysses Maclaren
+Great to meet the GM of SSW - Ulysses Maclaren:
+https://www.linkedin.com/in/ulyssesmaclaren/?ppe=1
+
+
 ## Handy links
 
 ### Angular Team Weekly Notes
