@@ -1,8 +1,11 @@
 # NgSuperpowers
 
 These are angular SuperPowers course notes!
-Tweet link: https://twitter.com/luketn/status/857773936062234624
+(now with Redux!)
 
+![](NgSuperPowers.png)
+
+Tweet link: https://twitter.com/luketn/status/857773936062234624
 
 ## Tips
 
