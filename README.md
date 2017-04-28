@@ -1,6 +1,7 @@
 # NgSuperpowers
 
 These are angular SuperPowers course notes!
+Tweet link: https://twitter.com/luketn/status/857773936062234624
 
 
 ## Tips
@@ -36,3 +37,6 @@ Blog: https://duncanhunter.com.au/
 
 ### Angular Team Weekly Notes
 https://docs.google.com/document/d/1rC5dz7AkCZP813daT_bccbS-20OLmXgBVi50CSKx148/pub
+
+### API for companies:
+http://firebootcamp-crm-api.azurewebsites.net/api/company
