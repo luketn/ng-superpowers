@@ -16,6 +16,9 @@ https://coryrylan.com/blog/angular-async-data-binding-with-ng-if-and-ng-else
 Use this instead of Karma for instant feedback on tests as you write them.
 https://wallabyjs.com/
 
+#### fakeAsync for testing asynchronous behaviour without waiting!
+https://angular.io/docs/ts/latest/api/core/testing/index/fakeAsync-function.html
+
 ### Visual Studio Commands
 
 Command + C + V - duplicate line
