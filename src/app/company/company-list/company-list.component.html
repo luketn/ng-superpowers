@@ -1,14 +1,5 @@
 <div *ngIf="companies$ | async; let companies; else loading">
-    <table class="bordered">
-        <thead>
-            <tr>
-                <th>Name</th>
-            </tr>
-        </thead>
-        <tr *ngFor="let company of companies">
-            <td>{{company.name}}</td>
-        </tr>
-    </table>
+    <ngsp-company-table [companies]="companies"></ngsp-company-table>
 </div>
 <ng-template #loading>
     Loading...
