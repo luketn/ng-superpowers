@@ -1,1 +1,10 @@
-{{companies | json}}
+<table class="bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tr *ngFor="let company of companies">
+        <td>{{company.name}}</td>
+    </tr>
+</table>
