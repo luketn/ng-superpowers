@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Company } from 'app/company/company';
 
 @Component({
@@ -8,6 +8,8 @@ import { Company } from 'app/company/company';
 })
 export class CompanyTableComponent implements OnInit {
   @Input() companies: Company[];
+  @Output() edit = new EventEmitter();
+  @Output() delete = new EventEmitter();
   constructor() { }
 
   ngOnInit() {

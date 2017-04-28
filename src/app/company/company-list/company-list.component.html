@@ -1,5 +1,5 @@
 <div *ngIf="companies$ | async; let companies; else loading">
-    <ngsp-company-table [companies]="companies"></ngsp-company-table>
+    <ngsp-company-table [companies]="companies" (edit)="editCompany($event)" (delete)="deleteCompany($event)"></ngsp-company-table>
 </div>
 <ng-template #loading>
     Loading...

@@ -21,4 +21,12 @@ export class CompanyListComponent implements OnInit {
     this.companies$ = this.companyService.getCompanies();
   }
 
+  editCompany(companyId: number) {
+    console.log('Edit ' + companyId);
+  }
+
+  deleteCompany(companyId: number) {
+    console.log('Delete ' + companyId);
+  }
+
 }
