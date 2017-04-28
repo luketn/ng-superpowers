@@ -1,9 +1,10 @@
 # NgSuperpowers
 
-These are angular SuperPowers course notes!
+These are angular [SuperPowers](https://www.ssw.com.au/ssw/Events/Training/Angular-Superpowers-Tour.aspx) course notes!
+
 (now with Redux!)
 
-![](NgSuperPowers.png)
+![](NgSuperPowers2.png)
 
 Tweet link: https://twitter.com/luketn/status/857773936062234624
 
