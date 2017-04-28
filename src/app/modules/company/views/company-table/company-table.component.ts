@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Company } from 'app/company/company';
+import { Company } from 'app/state/models/company';
 
 @Component({
   selector: 'ngsp-company-table',
@@ -8,7 +8,6 @@ import { Company } from 'app/company/company';
 })
 export class CompanyTableComponent implements OnInit {
   @Input() companies: Company[];
-  @Output() edit = new EventEmitter();
   @Output() delete = new EventEmitter();
   constructor() { }
 

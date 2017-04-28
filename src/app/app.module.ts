@@ -5,22 +5,30 @@ import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CompanyListComponent } from './company/company-list/company-list.component';
+
 import { MaterializeModule } from 'angular2-materialize';
-import { CompanyTableComponent } from './company/company-table/company-table.component';
+
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { companiesReducer } from 'app/state/reducers/company';
+import { CompanyEffects } from 'app/state/effects/company';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    CompanyListComponent,
-    CompanyTableComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    MaterializeModule
+    MaterializeModule,
+    StoreModule.provideStore({companies: companiesReducer}),
+    EffectsModule.run(CompanyEffects),
+    StoreDevtoolsModule.instrumentOnlyWithExtension({
+      maxAge: 5
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

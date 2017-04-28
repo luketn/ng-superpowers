@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CompanyListComponent } from 'app/company/company-list/company-list.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/companies', pathMatch: 'full'},
-  {path: 'companies', component: CompanyListComponent},
-  {path: 'home', loadChildren: 'app/home/home.module#HomeModule'}
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: 'companies', loadChildren: './modules/company/company.module#CompanyModule'},
+  {path: 'home', loadChildren: './modules/home/home.module#HomeModule'}
 ];
 
 @NgModule({

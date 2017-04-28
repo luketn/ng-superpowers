@@ -1,0 +1,6 @@
+<div *ngIf="companies$ | async; let companies; else loading">
+    <ngsp-company-table [companies]="companies.list" (delete)="deleteCompany($event)"></ngsp-company-table>
+</div>
+<ng-template #loading>
+    <span>Loading...</span>
+</ng-template>

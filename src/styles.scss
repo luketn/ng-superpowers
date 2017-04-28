@@ -6,3 +6,6 @@ $secondary-color: color("indigo", "lighten-1") !default;
 
 @import '../node_modules/materialize-css/sass/materialize';
 
+.error-toast {
+    background-color: color("materialize-red", "base");
+}
