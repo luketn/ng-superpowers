@@ -1,4 +1,12 @@
-<h1>
-  {{title}}
-</h1>
-<router-outlet></router-outlet>
+<nav>
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo">Angular Super Powers!</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a routerLink="/home">Home</a></li>
+      <li><a routerLink="/companies">Companies</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

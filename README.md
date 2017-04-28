@@ -47,3 +47,12 @@ https://docs.google.com/document/d/1rC5dz7AkCZP813daT_bccbS-20OLmXgBVi50CSKx148/
 
 ### API for companies:
 http://firebootcamp-crm-api.azurewebsites.net/api/company
+
+
+## Advice for Infomedia!
+
+### Migration from JS to TypeScript
+It may be possible to do that, but there will be issues with RequireJS define() output to overcome. 
+There would still be a benefit though, because you can have strong typing and compile errors etc...
+Action: Investigate adding a TypeScript compile phase, perhaps using a gulp build that would run the TypeScript compiler and output a define() module for other code to consume.
+
