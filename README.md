@@ -8,6 +8,18 @@ Tweet link: https://twitter.com/luketn/status/857773936062234624
 
 ### Angular
 
+#### ngrx
+Use ngrx!
+
+It's a great implementation of the redux pattern for Angular with observables.
+https://github.com/ngrx/store
+
+Spend some time learning the best practices from the example:
+https://github.com/ngrx/example-app
+
+Use @Effects to interact with remote services. They intercept actions and perform remote calls before dispatching actions on to the reducer. 
+
+
 #### Loading Display
 This is cool; have a loading message show until your observable resolves to data:
 https://coryrylan.com/blog/angular-async-data-binding-with-ng-if-and-ng-else
