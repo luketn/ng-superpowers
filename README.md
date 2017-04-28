@@ -6,6 +6,13 @@ Tweet link: https://twitter.com/luketn/status/857773936062234624
 
 ## Tips
 
+### Angular
+
+#### Loading Display
+This is cool; have a loading message show until your observable resolves to data:
+https://coryrylan.com/blog/angular-async-data-binding-with-ng-if-and-ng-else
+
+
 ### Visual Studio Commands
 
 Command + C + V - duplicate line

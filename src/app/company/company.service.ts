@@ -1,14 +1,18 @@
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/operator/map';
 import { Injectable } from '@angular/core';
+import { Http } from '@angular/http';
+import { Company } from 'app/company/company';
 
 @Injectable()
 export class CompanyService {
 
-  constructor() { }
+  constructor(private http: Http) { }
 
-  getCompanies() {
-    return [
-      {id: -1, name: 'company 1', email: 'email 1', phone: 12345},
-      {id: -2, name: 'company 2', email: 'email 2', phone: 22345}
-    ];
+  getCompanies(): Observable<Company[]> {
+    return this.http.get('http://firebootcamp-crm-api.azurewebsites.net/api/company')
+                    .map(response => response.json())
+        ;
   }
 }
+

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Company } from 'app/company/company';
 import { CompanyService } from '../company.service';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'ngsp-company-list',
@@ -9,7 +10,7 @@ import { CompanyService } from '../company.service';
   providers: [CompanyService]
 })
 export class CompanyListComponent implements OnInit {
-  companies: Company [];
+  companies$: Observable<Company[]>;
   constructor(private companyService: CompanyService) { }
 
   ngOnInit() {
@@ -17,7 +18,7 @@ export class CompanyListComponent implements OnInit {
   }
 
   getCompanies() {
-    this.companies = this.companyService.getCompanies();
+    this.companies$ = this.companyService.getCompanies();
   }
 
 }
