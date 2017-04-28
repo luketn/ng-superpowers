@@ -8,5 +8,5 @@ import { RouterModule } from '@angular/router';
   providers: [RouterModule]
 })
 export class AppComponent {
-  title = 'ngsp works!';
+  title = 'Angular Super Powers!';
 }

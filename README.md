@@ -12,6 +12,9 @@ Tweet link: https://twitter.com/luketn/status/857773936062234624
 This is cool; have a loading message show until your observable resolves to data:
 https://coryrylan.com/blog/angular-async-data-binding-with-ng-if-and-ng-else
 
+#### Wallaby Unit Test Runner
+Use this instead of Karma for instant feedback on tests as you write them.
+https://wallabyjs.com/
 
 ### Visual Studio Commands
 
