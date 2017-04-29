@@ -16,7 +16,7 @@ import { Http } from '@angular/http';
 
 @Injectable()
 export class CompanyEffects {
-    private url = 'http://firebootcamp-crm-api.azurewebsites.net/api/company';
+    private url = 'https://firebootcamp-crm-api.azurewebsites.net/api/company';
 
     @Effect()
     loadCompanies$: Observable<Action> = this.actions$

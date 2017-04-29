@@ -2,13 +2,18 @@
   "name": "ng-superpowers",
   "version": "0.0.0",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luketn/ng-superpowers.git"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "build-docs": "ng lint && ng test --single-run && ng build --prod --output-path docs --base-href \"/ng-superpowers\" --deploy-url \"https://luketn.github.io/ng-superpowers/\"",
+    "checkin-docs": "git add docs && git commit -m \"DocsUpdate\" && git push"
   },
   "private": true,
   "dependencies": {
@@ -42,9 +47,9 @@
     "karma": "~1.4.1",
     "karma-chrome-launcher": "~2.0.0",
     "karma-cli": "~1.0.1",
+    "karma-coverage-istanbul-reporter": "^0.2.0",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
-    "karma-coverage-istanbul-reporter": "^0.2.0",
     "protractor": "~5.1.0",
     "ts-node": "~2.0.0",
     "tslint": "~4.5.0",
