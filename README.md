@@ -4,7 +4,7 @@ These are angular [SuperPowers](https://www.ssw.com.au/ssw/Events/Training/Angul
 
 (now with Redux!)
 
-![](NgSuperPowers2.png)
+![](NgSuperPowers3.png)
 
 Tweet link: https://twitter.com/luketn/status/857773936062234624
 
