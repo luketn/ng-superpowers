@@ -3,7 +3,7 @@ import { Company } from 'app/state/models/company';
 import { Observable } from 'rxjs/Observable';
 import { Store } from '@ngrx/store';
 import { AppState, CompanyState } from 'app/state/app.state';
-import { RemoveCompanyAction, LoadCompaniesAction } from 'app/state/actions/company';
+import { RemoveCompanyAction, LoadCompaniesAction, AddCompanyAction } from 'app/state/actions/company';
 import * as Materialize from 'angular2-materialize';
 
 @Component({
@@ -19,6 +19,14 @@ export class CompanyListComponent implements OnInit {
     this.companies$ = this.store.select('companies');
     this.loadCompanies();
     this.toastErrors();
+  }
+
+  refresh() {
+    this.loadCompanies();
+  }
+
+  add() {
+    this.store.dispatch(new AddCompanyAction());
   }
 
   loadCompanies() {

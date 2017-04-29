@@ -2,6 +2,7 @@ import { Action } from '@ngrx/store';
 import { Company } from '../models/company';
 import { Observable } from 'rxjs/Observable';
 
+export const ADD_COMPANY = 'Add Company';
 export const REMOVE_COMPANY = 'Remove Company';
 export const LOAD_COMPANIES = 'Load Companies';
 export const LOAD_COMPANIES_SUCCESS = 'Load Companies Success';
@@ -27,4 +28,8 @@ export class RemoveCompanyAction implements Action {
   constructor(id: number) { this.payload = id; }
 }
 
-export type Actions = LoadCompaniesAction | LoadCompaniesSuccessAction | LoadCompaniesFailAction | RemoveCompanyAction;
+export class AddCompanyAction implements Action {
+  readonly type = ADD_COMPANY;
+}
+
+export type Actions = AddCompanyAction | LoadCompaniesAction | LoadCompaniesSuccessAction | LoadCompaniesFailAction | RemoveCompanyAction;

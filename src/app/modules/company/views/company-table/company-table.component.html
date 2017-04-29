@@ -1,20 +1,22 @@
-<table class="bordered">
+<table class="<bordered></bordered>">
   <thead>
     <tr>
       <th>Name</th>
       <th>Phone</th>
       <th>Email</th>
       <th>Actions</th>
+      <th>
+        <a class="btn-floating waves-effect waves-light right icon-margin" (click)="refresh.emit()"><i class="material-icons">refresh</i></a>
+        <a class="btn-floating waves-effect waves-light right" (click)="add.emit()"><i class="material-icons">add</i></a>
+      </th>
     </tr>
   </thead>
   <tr *ngFor="let company of companies">
     <td>{{company.name}}</td>
     <td>{{company.phone}}</td>
     <td>{{company.email}}</td>
-    <td>
-      <button class="btn waves-effect waves-light" name="action" (click)="delete.emit(company.id)">Delete
-        <i class="material-icons right">delete</i>
-      </button>
+    <td colspan="2">
+      <a class="btn-floating waves-effect waves-light red darken-3 right" (click)="delete.emit(company.id)"><i class="material-icons">delete</i></a>
     </td>
   </tr>
 </table>
