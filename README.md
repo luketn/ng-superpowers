@@ -70,6 +70,8 @@ https://docs.google.com/document/d/1rC5dz7AkCZP813daT_bccbS-20OLmXgBVi50CSKx148/
 ### API for companies:
 http://firebootcamp-crm-api.azurewebsites.net/api/company
 
+### Publishing
+ng build --output-path docs
 
 ## Advice for Infomedia!
 
