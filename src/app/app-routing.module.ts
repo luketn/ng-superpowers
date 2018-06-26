@@ -1,14 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
-  {path: 'companies', loadChildren: './modules/company/company.module#CompanyModule'},
-  {path: 'home', loadChildren: './modules/home/home.module#HomeModule'}
-];
+const routes: Routes = [];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { useHash: true })],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

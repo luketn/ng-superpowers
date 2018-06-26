@@ -1,11 +1,1 @@
-$roboto-font-path: "../node_modules/materialize-css/fonts/roboto/";
-@import '../node_modules/materialize-css/sass/components/color';
-
-$primary-color: color("green", "lighten-2");
-$secondary-color: color("indigo", "lighten-1") !default;
-
-@import '../node_modules/materialize-css/sass/materialize';
-
-.error-toast {
-    background-color: color("materialize-red", "base");
-}
+/* You can add global styles to this file, and also import other style files */
