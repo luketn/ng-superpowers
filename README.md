@@ -1,27 +1,55 @@
 # NgSuperpowers
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
+### Angular Materialize
+Let's add some style!
 
-## Development server
+Install the dependencies
+```
+npm install jquery@^3.3.1 hammerjs materialize-css angular2-materialize --save
+```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Add the scripts (angular.json)
+```
+"scripts": [ 
+    "node_modules/jquery/dist/jquery.js",
+    "node_modules/hammerjs/hammer.js",
+    "node_modules/materialize-css/dist/js/materialize.js"
+]
+```
 
-## Code scaffolding
+Import the SASS (styles.scss):
+```
+$roboto-font-path: "../node_modules/materialize-css/dist/fonts/roboto/";
+@import '../node_modules/materialize-css/sass/components/_color';
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+$primary-color: color("green", "lighten-2");
+$secondary-color: color("indigo", "lighten-1") !default;
 
-## Build
+@import '../node_modules/materialize-css/sass/materialize';
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Grab the fonts (index.html):
+```
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+```
 
-## Running unit tests
+Import the module (app.module.ts):
+```
+import { MaterializeModule } from 'angular2-materialize';
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+@NgModule({
+  ..
+  imports: [
+      ..
+    MaterializeModule
+  ]
+```
 
-## Running end-to-end tests
+Add the directive import to a component (e.g. app.component.ts):
+```
+import {MaterializeDirective} from "angular2-materialize";
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+And get materializing!
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Ref: https://infomedialtd.github.io/angular2-materialize/#/Buttons
